@@ -672,6 +672,7 @@ img {
 
 /*---------------Form--------------------------*/
 
+
 .modal-overlay {
     background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
@@ -693,6 +694,7 @@ img {
     opacity: 1;
     pointer-events: auto;
 }
+
 
 .modal {
     position: absolute;
@@ -903,14 +905,6 @@ img {
     margin-right: 8px;
 }
 
-.form-text {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.16;
-    letter-spacing: 0.04em;
-    color: #2e2f42;
-    text-align: center;
-}
 
 .form-privacy-check:checked+.form-label-poliicy {
     fill: #f4f4fd;
