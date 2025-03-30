@@ -731,14 +731,16 @@ img {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn-close:hover,
+.modal .modal-btn-close:hover,
 .modal-btn-close:focus {
     background-color: #404bbf;
     border: none;
     fill: #ffffff;
 }
 
-
+.modal-btn-close-svg:hover {
+    fill: #ffffff;
+}
 
 .modal-btn-close-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -837,7 +839,6 @@ img {
 
 .modal-form-privacy {
     margin-bottom: 24px;
-
 }
 
 .visually-hidden {
@@ -859,12 +860,14 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 8px;
+
 }
+
+/* display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ flex-direction: row;
+ gap: 8px;*/
 
 .form-label-poliicy input {
     margin-right: 8px;
@@ -885,15 +888,19 @@ img {
     margin-right: 8px;
 }
 
-.form-privacy-check:checked+.form-label-poliicy .form-label-check {
+.visually-hidden:checked+.form-label-poliicy .form-label-check {
     background-color: #404bbf;
     border: none;
 
 }
 
-.form-privacy-check:checked+.form-label-poliicy {
+.visually-hidden:checked+.form-label-poliicy {
     fill: #f4f4fd;
 }
+
+/*.form-privacy-check:checked+.form-label-poliicy {
+    fill: #f4f4fd;
+}*/
 
 .form-label-poliicy-link {
     font-weight: 400;
