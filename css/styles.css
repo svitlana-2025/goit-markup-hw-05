@@ -712,7 +712,7 @@ img {
     padding: 72px 24px 24px 24px;
 }
 
-.modal-btn-close {
+.modal-button-close {
     fill: #2e2f42;
     position: absolute;
     top: 24px;
@@ -732,14 +732,17 @@ img {
 }
 
 
-.modal-btn-close:focus,
-.modal-btn-close:hover {
+.modal-button-close:hover,
+.modal-button-close:focus {
     background-color: #404bbf;
     border: none;
+}
+
+.modal-button-close:hover .modal-button-close-svg {
     fill: #ffffff;
 }
 
-.modal-btn-close-svg:focus {
+.modal-button-close:focus .modal-button-close-svg {
     fill: #ffffff;
 }
 
@@ -833,6 +836,7 @@ img {
 
 .modal-form-privacy {
     margin-bottom: 24px;
+    display: flex;
 }
 
 .visually-hidden {
@@ -866,7 +870,7 @@ img {
     margin-right: 8px;
 }
 
-.form-label-check {
+.form-label-span {
     display: inline-flex;
     width: 16px;
     height: 16px;
@@ -881,12 +885,15 @@ img {
     margin-right: 8px;
 }
 
-.form-privacy-check:checked+.form-label-poliicy .form-label-check {
+.form-input:checked .checkbox-icon {
     background-color: #404bbf;
     border: none;
+    fill: #f4f4fd;
 }
 
-.form-privacy-check:checked+.form-label-poliicy {
+.form-input:checked+.form-label-poliicy>.form-label-span {
+    background-color: #404bbf;
+    border: none;
     fill: #f4f4fd;
 }
 
