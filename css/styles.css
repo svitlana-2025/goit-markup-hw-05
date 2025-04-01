@@ -693,6 +693,7 @@ img {
 .modal-overlay .is-open {
     opacity: 1;
     pointer-events: auto;
+    visibility: visible;
 }
 
 
@@ -700,31 +701,40 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-    background: #fcfcfc;
     border-radius: 4px;
-    padding: 16px;
     width: 408px;
     min-height: 584px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+        0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fcfcfc;
     transform: translate(-50%, -50%);
-    overflow-y: auto;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
 }
 
-.modal-button-close {
+.modal-overlay:not(.is-open) .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal-button-close-svg {
     fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button-close {
+    width: 24px;
+    height: 24px;
     position: absolute;
     top: 24px;
     right: 24px;
-    width: 24px;
-    height: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+    background-color: #e7e9fc;
+    stroke-width: 1px;
+    stroke: rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e7e9fc;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -738,11 +748,11 @@ img {
     border: none;
 }
 
-.modal-button-close:hover .modal-button-close-svg {
+.modal-button-close:hover {
     fill: #ffffff;
 }
 
-.modal-button-close:focus .modal-button-close-svg {
+.modal-button-close:focus {
     fill: #ffffff;
 }
 
@@ -834,6 +844,10 @@ img {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-comment:focus {
+    border-color: #4d5ae5;
+}
+
 .modal-form-privacy {
     margin-bottom: 24px;
     display: flex;
@@ -885,11 +899,11 @@ img {
     margin-right: 8px;
 }
 
-.form-input:checked .checkbox-icon {
+/*.form-input:checked .checkbox-icon {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
-}
+}*/
 
 .form-input:checked+.form-label-poliicy>.form-label-span {
     background-color: #404bbf;
