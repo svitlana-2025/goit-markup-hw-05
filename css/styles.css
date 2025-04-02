@@ -674,10 +674,6 @@ img {
 /*---------------Form--------------------------*/
 
 .backdrop {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -794,6 +790,14 @@ img {
     border-color: #4d5ae5;
 }
 
+.container-input {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
 .comment-container {
     margin-bottom: 16px;
 }
@@ -818,7 +822,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    resize: none;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     width: 360px;
@@ -839,9 +842,14 @@ img {
 }
 
 .agreement {
-    display: flex;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     margin-bottom: 24px;
+    position: relative;
 }
+
 
 .agreement-text {
     font-family: "Roboto", sans-serif;
@@ -851,7 +859,6 @@ img {
     letter-spacing: 0.04em;
     color: #8e8f99;
     align-items: center;
-    display: flex;
 }
 
 .span-privacy {
@@ -870,63 +877,14 @@ img {
 }
 
 .pp-link {
-    line-height: 1.33333;
+    line-height: 1.33;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
+    font-size: 12px;
 }
 
-.container-input {
-    position: relative;
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-}
 
-.subscribe-button {
-    border-radius: 4px;
-    background: #4d5ae5;
-    padding: 8px 24px;
-    min-width: 165px;
-    height: 40px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.subscribe-button-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 16px;
-}
-
-.subscribe-svg {
-    fill: #ffffff;
-    margin-left: 16px;
-}
-
-.button-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
-    text-align: center;
-    color: #fff;
-}
-
-.align-subscribe {
-    display: flex;
-    gap: 24px;
-}
 
 .agreement-input:checked .span-privacy {
     background-color: #404bbf;
