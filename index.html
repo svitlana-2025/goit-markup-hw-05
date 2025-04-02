@@ -67,7 +67,7 @@
           <h1 class="main-sektion-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button-order-service">
+          <button type="button" class="button-order-service" data-modal-open>
             Order Service
           </button>
         </div>
@@ -472,10 +472,9 @@
         </div>
       </div>
     </footer>
-
-    <div class="backdrop is-ope">
+    <div class="backdrop is-ope" data-modal>
       <div class="modal">
-        <button type="button" class="modal-button-close">
+        <button type="button" class="modal-button-close" data-modal-close>
           <svg width="8" height="8" class="icon icon-cross">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1-1"></use>
           </svg>
@@ -549,19 +548,20 @@
               class="agreement-input visually-hidden"
             />
             <label class="agreement-text" for="user-privacy">
-              <span class="span-privacy">
-                <svg width="10" height="8" class="icon-checkbox">
+              <span class="span-privacy"
+                ><svg width="10" height="8" class="icon-checkbox">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
 
-              <a class="pp-link" href="#">Privacy Policy</a>
+              <a class="pp-link" href="">Privacy Policy</a>
             </label>
           </div>
           <button type="button" class="button-order-service">Send</button>
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

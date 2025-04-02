@@ -216,6 +216,7 @@ img {
     color: #FFFFFF;
     max-width: 496px;
     margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .button-order-service {
@@ -673,6 +674,10 @@ img {
 /*---------------Form--------------------------*/
 
 .backdrop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
     position: fixed;
     top: 0;
     left: 0;
@@ -834,17 +839,19 @@ img {
 }
 
 .agreement {
+    display: flex;
     margin-bottom: 24px;
 }
 
 .agreement-text {
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
-    display: flex;
     align-items: center;
+    display: flex;
 }
 
 .span-privacy {
@@ -860,11 +867,10 @@ img {
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
-    padding: 4px 3px;
 }
 
 .pp-link {
-    line-height: 1.33;
+    line-height: 1.33333;
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
@@ -876,6 +882,50 @@ img {
     height: 40px;
     display: flex;
     align-items: center;
+}
+
+.subscribe-button {
+    border-radius: 4px;
+    background: #4d5ae5;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.subscribe-button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.subscribe-svg {
+    fill: #ffffff;
+    margin-left: 16px;
+}
+
+.button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+
+.align-subscribe {
+    display: flex;
+    gap: 24px;
 }
 
 .agreement-input:checked .span-privacy {
@@ -923,5 +973,10 @@ img {
 
 .button-order-service:hover,
 .button-order-service:focus {
+    background-color: #404bbf;
+}
+
+.form-btn:hover,
+.form-btn:focus {
     background-color: #404bbf;
 }
