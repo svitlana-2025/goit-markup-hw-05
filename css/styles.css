@@ -847,9 +847,6 @@ img {
 
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
-    gap: 8px;
 }
 
 .span-privacy {
@@ -864,6 +861,7 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
 }
 
 .pp-link {
